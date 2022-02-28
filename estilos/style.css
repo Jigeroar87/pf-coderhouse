@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+/*INICIO -> Mismo formato para todas las páginas para que sea uniforme*/
+
+body{
+	overflow-x: hidden;
+    background-color: #E6DF7C ;
+}
+
+nav {
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+  flex-wrap: wrap;
+}
+
+.navBackground {
+	background-color: #6AC7E6;
+	position: sticky;
+	list-style-type: none;
+}
+
+
+ul {
+    font-style: italic;
+    list-style: none;
+    font-size:0;
+ }
+
+ li {
+    font-style: italic;
+    display: inline-block;
+    width: 10%;
+    position:relative;
+    font-size: 1.2rem;
+    text-align: center;
+ }
+
+.estiloLista{
+    font-size:2rem;
+}
+
+h1{
+    font-style: italic;
+    text-align: center;    
+}
+
+article{
+    background-color: #E6DF7C ;
+	  bottom: 5px;
+	  left: 300px;
+    text-align: center;
+
+}
+
+#Fondoh1{
+    background-color:#E6DF7C;
+}
+
+
+img {
+    border-radius: 10px;
+}
+
+p {
+    background-color: #bf6ae6;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+
+h2{
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/*FIN -> Mismo formato para todas las páginas para que sea uniforme*/
+
+/*INICIO -> Desafío complementario FULL RESPONSIVE para todas las páginas de FunnyBox*/
+
+/*Inicio Body Index con GRID*/
+
+.body__Funnybox { 
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "section"
+      "footer";
+    grid-template-rows: 70px 1fr 70px;  
+    grid-template-columns: 100% 1fr 100%;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    height: 100vh;
+    margin: 0;
+}
+
+#pageHeader {
+        grid-area: header;
+}
+#pageFooter {
+        grid-area: footer;
+}
+#mainSection { 
+        grid-area: section;
+        padding: 20px;      
+}
+
+/*Fin Body Index con GRID*/
+
+/*NavBar de Index con Flexbox*/
+
+.nav__Funnybox {
+    display: flex;
+    background: #6AC7E6;
+    color: white;
+    border-radius: 3px;
+    font-family: sans-serif;
+    padding: 5px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    place-content: space-between center;
+  }
+  .nav__Funnybox > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+  }
+  .nav__Funnybox li {
+    margin-right: 1em;
+    font-size: 15px;
+  }
+
+  /*NavBar de Index con Flexbox*/
+
+  .footer__Funnybox {
+    display: flex;
+    background: #6AC7E6;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    place-content: space-between center;
+  }
+
+  .footer__Funnybox div {
+    margin-right: 1em;
+    font-size: 15px;
+    padding: 10px;
+    font-size: 20px;
+  }
+
+/*Flexbox para Articulos de Index*/
+
+  .cards__Funnybox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    place-content: space-between center;
+    
+  }
+
+  .card__Funnybox {
+    width: 600px;
+    height: 300px;
+    margin: 10px;
+  } 
+
+  .card__Funnybox img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .card__Funnybox iframe {
+    width: 80%;
+    height: 80%;
+  }
+
+  .card__Funnybox .text {
+    padding: 0;
+  }
+
+  .card__Funnybox__producto {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    padding: 50px;
+  } 
+
+  .card__Funnybox__producto img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .card__Funnybox__producto .text {
+    padding: 0;
+  }
+
+  .h1__Funnybox__producto{
+    font-style: italic;
+    text-align: center;
+    background-color: #bf6ae6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    place-content: space-between center;
+  }  
+  .card__Funnybox__reparto {
+    width: 900px;
+    height: 600px;
+    margin: 10px;
+  } 
+
+  .card__Funnybox__reparto img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .card__Funnybox__reparto .text {
+    padding: 0;
+  }
+
+  .form__Funnybox{
+    display: flex;
+    background-color: #E6DF7C;
+    border-radius: 3px;
+    padding: 1.8em;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    place-content: space-between center;
+  }
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  .message > textarea {
+   flex: 1; 
+   min-width: 18em;
+  }
+  .contact {
+   	flex: 1; 
+    order: 1;
+   	margin-right: 2em; 
+  }
+  .contact input {
+    width: 100%;
+  }
+  .contact input,
+  .contact button {
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
+
+
+/*Inicio Uso de @media queries móviles 576px */
+
+@media all and (max-width: 576px) {
+
+    .body__Funnybox { 
+      display: grid;
+      grid-template-areas: 
+        "header"
+        "section"
+        "footer";
+      grid-template-rows: 70px 1fr 70px;  
+      grid-template-columns: 100% 1fr 100%;
+      grid-row-gap: 0px;
+      grid-column-gap: 0px;
+      height: 100vh;
+      margin: 0;
+      box-sizing: border-box;
+  }
+  
+  #pageHeader {
+          grid-area: header;
+  }
+  #pageFooter {
+          grid-area: footer;
+  }
+  #mainSection { 
+          grid-area: section;
+/*          padding: 20px;      */
+  }
+
+
+  nav {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+
+   .nav__Funnybox {
+        flex-direction: row;
+        font-size: 5px;
+        box-sizing: border-box;
+   }
+  
+   .nav__Funnybox ul {
+          flex-direction: row; 
+          margin-bottom: 1em;
+          font-size: 5px;
+          box-sizing: border-box;
+   }
+   
+   .nav__Funnybox li {
+    margin-right: 1em;
+    font-size: 12px;
+  }
+
+   .cards__Funnybox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    place-content: space-between center;
+    box-sizing: border-box;
+  }
+
+   .card__Funnybox {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    box-sizing: border-box;
+  } 
+  
+  .card__Funnybox img {
+    width: 80%;
+    height: 80%;
+    box-sizing: border-box;
+  }
+
+  .card__Funnybox iframe {
+    width: 80%;
+    height: 80%;
+    box-sizing: border-box;
+  }
+
+  .card__Funnybox .text {
+ /*   padding: 0 20px 20px;*/
+    box-sizing: border-box;
+    font-size: 12px;
+  }
+
+  .card__Funnybox .text {
+    /*   padding: 0 20px 20px;*/
+       box-sizing: border-box;
+       font-size: 10px;
+     }
+
+  .card__Funnybox h1 {
+ /*   padding: 0 20px 20px;*/
+    box-sizing: border-box;
+    font-size: 10px;
+  }
+
+  .card__Funnybox p {
+    /*   padding: 0 20px 20px;*/
+       box-sizing: border-box;
+       font-size: 12px;
+  }
+
+  .card__Funnybox__producto {
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    padding: 25px;
+    font-size: 12px;
+  } 
+
+  .card__Funnybox__producto img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .card__Funnybox__producto .text {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .h1__Funnybox__producto{
+    font-style: italic;
+    text-align: center;
+    background-color: #bf6ae6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    place-content: space-between center;
+    font-size: 10px;
+  }  
+
+  .card__Funnybox__reparto {
+    width: 450px;
+    height: 300px;
+    margin: 12px;
+    font-size: 12px;
+  } 
+
+  .card__Funnybox__reparto img {
+    width: 80%;
+    height: 80%;
+  }
+
+  .card__Funnybox .text {
+    padding: 0;
+    font-size: 12px;
+  }
+
+  .form__Funnybox{
+    display: flex;
+    background-color: #E6DF7C;
+    border-radius: 3px;
+    padding: 1.8em;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    place-content: space-between center;
+    font-size: 12px;
+  }
+
+  .message {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+  .message > textarea {
+   flex: 1; 
+   min-width: 18em;
+  }
+  .contact {
+   	flex: 1; 
+    order: 1;
+   	margin-right: 2em; 
+  }
+  .contact input {
+    width: 100%;
+  }
+  .contact input,
+  .contact button {
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 12px;
+  }
+
+  .footer__Funnybox {
+    display: flex;
+    background: #6AC7E6;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    place-content: space-between center;
+  }
+
+  .footer__Funnybox div {
+    margin-right: 1em;
+    font-size: 15px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+
+}
+
+/*Fin Uso de @media queries móviles 576px*/
+
+
+
+
+
+

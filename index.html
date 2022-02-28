@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--Dentro de los "tags" <head>, definiremos el título de nuestra página, declararemos la codificación de caracteres, 
+    incluiremos cualquier información general que queramos sobre el documento, e incorporaremos archivos externos con los estilos, 
+    scripts o incluso imágenes necesarias para mostrar la página.
+    A excepción del título y algunos iconos, el resto de la información incluida en el documento dentro de las etiquetas <head> no será visible.-->
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/imagenes/Logo_FunnyBox.JPG">
+    <link rel="stylesheet" href="/estilos/style.css">   
+    <title>Funny Box</title>
+</head>
+
+<!--Este "cuerpo" es la parte visible del documento y viene especificado con la etiqueta <body>.-->
+<body class="body__Funnybox">
+
+    <!--la etiqueta <header> aporta información introductoria (como títulos, subtítulos, logos....)-->
+    <header id="pageHeader">
+        
+
+        <!--<nav> es la Barra de Navegación-->
+        <nav class="nav__Funnybox">
+        
+            
+            <!--Menú Principal-->
+            <ul>
+            
+                <!--Logo-->
+                <li>
+                    <a href="/index.html"> 
+                        <img src="/imagenes/Logo_FunnyBox.JPG" alt=Instagram" width="45px" height="45px">        
+                    </a>
+                </li>
+            
+                <li><a href="/index.html"> &#10004; Inicio</a></li>
+                <li><a href="/paginas/productos.html"> &#10004; Productos</a></li>
+                <li><a href="/paginas/sobre_nosotros.html">&#10004; Sobre Nosotros</a></li>
+                <li><a href="/paginas/contactanos.html"> &#10004; Contáctanos</a></li>
+                <li><a href="/paginas/zonas_reparto.html"> &#10004; Zonas de Reparto</a></li>
+            
+                <li><a href="https://www.facebook.com/Funny-Box-Per%C3%BA-108836140896985"> 
+                        <img src="../imagenes/facebook.png" alt=Facebook" width="45px" height="45px">        
+                    </a>
+                </li>
+            
+                <li><a href="https://www.instagram.com/funnybox_pe/?hl=es-la"> 
+                        <img src="../imagenes/Instagram.png" alt=Instagram" width="45px" height="45px">        
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Barra de Contenido Principal que contiene la información más relevante del documento que puede disponerse, 
+        por ejemplo, en varios bloques o columnas-->
+    
+    <section id="mainSection" class="cards__Funnybox">
+           
+            <article class="card__Funnybox">
+                <h3>Campaña del mes Patrio</h3>
+                  <p>¡Para celebrar la independencia del Perú tenemos muchas ofertas!</p>
+                <!--Banner con campaña del mes/semana-->
+                <img src="/imagenes/Campana_mes.JPG" alt="Campana1" width="300px" height="200px">
+                <div class="text">
+                    <a href="/paginas/productos.html">Ir a Productos</a>
+                </div>
+            </article>
+
+            
+            <article class="card__Funnybox">
+                <h3>Nuestros Clientes Satisfechos</h3>
+                <p>¡Llena de felicidad a tu niñ@ con un FunnyBox!</p>
+                <!--Collage con cliente satisfecho-->
+                <img src="/imagenes/Cliente_Satisfecho.JPG" alt="Campana1" width="300px" height="200px">
+                <div class="text">
+                </div>
+            </article>
+
+    </section>
+
+            <!--Pie de Página-->
+            <footer id="pageFooter" class="footer__Funnybox" >
+                <!--Imagen como link-->
+                <div>Lima - Perú 2022 - Síguenos en nuestras redes sociales</div>
+                <div>
+                    <a href="https://www.facebook.com/Funny-Box-Per%C3%BA-108836140896985"> 
+                        <img src="../imagenes/facebook.png" alt=Facebook" width="45px" height="45px">        
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/funnybox_pe/?hl=es-la"> 
+                        <img src="../imagenes/Instagram.png" alt=Instagram" width="45px" height="45px">        
+                    </a>
+                </div>
+            </footer>
+
+</body>
+</html>
