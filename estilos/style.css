@@ -6,7 +6,7 @@
 /*INICIO -> Mismo formato para todas las páginas para que sea uniforme*/
 
 body{
-	overflow-x: hidden;
+	  overflow-x: hidden;
     background-color: #E6DF7C ;
 }
 
@@ -80,7 +80,16 @@ h2{
     font-weight: bold;
 }
 
+/*fondo con gradiente*/
 
+.gradiente__img {
+  /* background-image: radial-gradient(red, white); */
+  /*background-image: radial-gradient(#FFFFFF, #333333);*/
+  background-image: radial-gradient(#6AC7E6,#bf6ae6, #E6DF7C);
+  transition: all 3s 
+}
+
+/**/
 
 /*FIN -> Mismo formato para todas las páginas para que sea uniforme*/
 
