@@ -5,156 +5,153 @@
     <link rel="icon" type="image/x-icon" href="../imagenes/Logo_FunnyBox.JPG">
     <link rel="stylesheet" href="../estilos/style.css"> 
     <link rel="stylesheet" href="../estilos/animate.css">  
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    
     <title>Funny Box</title>
 </head>
-<body class="body__Funnybox">
+
+
+<body>
 
     <!--la etiqueta <header> aporta información introductoria (como títulos, subtítulos, logos....)-->
-        <header id="pageHeader">
-        
-
+        <header>
             <!--<nav> es la Barra de Navegación-->
-            <nav class="nav__Funnybox">
-            
-                
-                <!--Menú Principal-->
-                <ul>
-                
-                    <!--Logo-->
-                    <li class="animate__animated animate__bounce animate__delay-1s animate__infinite animate__fast">
-                        <a href="../index.html"> 
-                            <img src="../imagenes/Logo_FunnyBox.JPG" alt=Instagram" width="45px" height="45px">        
-                        </a>
-                    </li>
-                
-                    <li><a href="../index.html"> &#10004; Inicio</a></li>
-                    <li><a href="productos.html"> &#10004; Productos</a></li>
-                    <li><a href="sobre_nosotros.html">&#10004; Sobre Nosotros</a></li>
-                    <li><a href="contactanos.html"> &#10004; Contáctanos</a></li>
-                    <li><a href="zonas_reparto.html"> &#10004; Zonas de Reparto</a></li>
-                
-                    <li><a href="https://www.facebook.com/Funny-Box-Per%C3%BA-108836140896985"> 
-                            <img src="../imagenes/facebook.png" alt=Facebook" width="45px" height="45px">        
-                        </a>
-                    </li>
-                
-                    <li><a href="https://www.instagram.com/funnybox_pe/?hl=es-la"> 
-                            <img src="../imagenes/Instagram.png" alt=Instagram" width="45px" height="45px">        
-                        </a>
-                    </li>
-                </ul>
+            <nav id="mainNav">
+                <div class="container-fluid " >
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="navbar ">
+                                    <li class="nav-item">
+                                        <a href="../index.html"> 
+                                            <img src="../imagenes/Logo_FunnyBox.JPG" alt=logo" width="45px" height="45px">        
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                      <a class="nav-link text-dark" href="../index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link text-dark" href="productos.html">Productos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link text-dark" href="sobre_nosotros.html">Sobre nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link text-dark" href="zonas_reparto.html">Zonas de reparto</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="contactanos.html">Contáctanos</a>
+                                      </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
             </nav>
         </header>
 
 
-        <section id="mainSection" >
+        <section>
+            
+            <div class="container-fluid bg-warning bg-opacity-50">
+                <div class="container">   
+                    <div class="row">
+                        <h1 class="h1__Funnybox__producto">Nuestros Productos</h1>
 
-            <h1 class="h1__Funnybox__producto">Nuestros Productos</h1>
+                        <div class="col-md-3 pt-5">
+                            <!--Producto Alcancia_Minie-->
+                            <img src="../imagenes/Productos/Alcancia_Minie.JPG" alt=Alcancia_Minie class="img-fluid img-thumbnail">
+                            <p>Alcancia Minie Mouse <br> Precio Regular: S/ 15 <br>Oferta: S/ 15</p>
+                        </div>
+                        
+                        <div class="col-md-3 pt-5">
+                            <!--Producto Alcancia_Unicornio-->
+                            <img src="../imagenes/Productos/Alcancia_Unicornio.JPG" alt=Alcancia_Unicornio class="img-fluid img-thumbnail">
+                            <p>Alcancia Unicornio <br> Precio Regular: S/ 15 <br>Oferta: S/ 15</p>   
+                        </div>
 
-            <main class="cards__Funnybox">
-                <article class="card__Funnybox__producto gradiente__img">
-                    <!--Producto Alcancia_Minie-->
-                    <img src="../imagenes/Productos/Alcancia_Minie.JPG" alt=Alcancia_Minie>
-                    <p>Alcancia Minie Mouse</p>
-                    <p>Precio Regular: S/ 15</p>
-                    <p>Oferta: S/ 10</p>
-                </article>
+                        <div class="col-md-3 pt-5">
+                            <!--Producto Alcancia_Lulu-->
+                            <img src="../imagenes/Productos/Alcancia_Lulu.JPG" alt=Alcancia_Lulu class="img-fluid img-thumbnail">
+                            <p>Alcancia Pequeña Lulú <br> Precio Regular: S/ 15 <br>Oferta: S/ 15</p>
+                            
+                        </div>
 
-                <article class="card__Funnybox__producto gradiente__img">
-                    <!--Producto Alcancia_Unicornio-->
-                    <img src="../imagenes/Productos/Alcancia_Unicornio.JPG" alt=Alcancia_Unicornio>
-                    <p>Alcancia Unicornio</p>
-                    <p>Precio Regular: S/ 15</p>
-                    <p>Oferta: S/ 10</p>
-                </article>
+                        <div class="col-md-3 pt-5">
+                            <!--Producto Alcancia_Hulk-->
+                            <img src="../imagenes/Productos/Alcancia_Hulk.JPG" alt=Alcancia_Hulk class="img-fluid img-thumbnail">
+                            <p>Alcancia Increíble Hulk <br> Precio Regular: S/ 15 <br>Oferta: S/ 15</p> 
+                        </div>                        
 
-                <article class="card__Funnybox__producto gradiente__img">
-                    <!--Producto Alcancia_Lulu-->
-                    <img src="../imagenes/Productos/Alcancia_Lulu.JPG" alt=Alcancia_Lulu>
-                    <p>Alcancia Pequeña Lulú</p>
-                    <p>Precio Regular: S/ 15</p>
-                    <p>Oferta: S/ 10</p>
-                </article>
+                        <div class="col-md-3 pt-5">
+                            <!--Producto Alcancia_Darkvader-->
+                            <img src="../imagenes/Productos/Alcancia_Darkvader.JPG" alt=Alcancia_Darkvader class="img-fluid img-thumbnail">
+                            <p>Alcancia Dark Vader<br> Precio Regular: S/ 15 <br>Oferta: S/ 15</p>
 
-                <article class="card__Funnybox__producto gradiente__img">
-                    <!--Producto Alcancia_Hulk-->
-                    <img src="../imagenes/Productos/Alcancia_Hulk.JPG" alt=Alcancia_Hulk>
-                    <p>Alcancia Increíble Hulk</p>
-                    <p>Precio Regular: S/ 15</p>
-                    <p>Oferta: S/ 10</p>
-                </article>
+                        </div>
+                        
+                        <div class="col-md-3 pt-5">
+                            <!--Producto Lienzo_Pikachu-->
+                            <img src="../imagenes/Productos/Lienzo_Pikachu.JPG" alt=Lienzo_Pikachu class="img-fluid img-thumbnail">
+                            <p>Lienzo Personalizado Pikachu<br> Precio Regular: S/ 15 <br>Oferta: S/ 15</p>                
+                        </div>
 
-                <article class="card__Funnybox__producto gradiente__img">
-                    <!--Producto Alcancia_Darkvader-->
-                    <img src="../imagenes/Productos/Alcancia_Darkvader.JPG" alt=Alcancia_Darkvader>
-                    <p>Alcancia Dark Vader</p>
-                    <p>Precio Regular: S/ 15</p>
-                    <p>Oferta: S/ 10</p>
-                </article>
+                        <div class="col-md-3 pt-5">
+                            <!--Producto Lienzo_Woody-->
+                            <img src="../imagenes/Productos/Lienzo_Woody.JPG" alt=Lienzo_Woody class="img-fluid img-thumbnail">
+                            <p>Lienzo Personalizado Woody<br> Precio Regular: S/ 15 <br>Oferta: S/ 15</p>
+                        </div>
 
+                        <div class="col-md-3 pt-5">
+                            <!--Producto Lienzo_Nopoygonta-->
+                            <img src="../imagenes/Productos/Lienzo_Nopoygonta.JPG" alt=Lienzo_Nopoygonta class="img-fluid img-thumbnail">
+                            <p>Lienzo Personalizado Pikachu<br> Precio Regular: S/ 15 <br>Oferta: S/ 15</p>
+                        </div>
 
-                <article class="card__Funnybox__producto gradiente__img">
-                    <!--Producto Lienzo_Pikachu-->
-                    <img src="../imagenes/Productos/Lienzo_Pikachu.JPG" alt=Lienzo_Pikachu>
-                    <p>Lienzo Personalizado Pikachu</p>
-                    <p>Precio Regular: S/ 15</p>
-                    <p>Oferta: S/ 10</p>
-                </article>
+                        <div class="col-md-3 pt-5">
+                            <!--Producto Lienzo_Payasito-->
+                            <img src="../imagenes/Productos/Lienzo_Payasito.JPG" alt=Lienzo_Payasito class="img-fluid img-thumbnail">
+                            <p>Lienzo Personalizado Payasito<br> Precio Regular: S/ 15 <br>Oferta: S/ 15</p>
+                        </div>
 
+                        <div class="col-md-3 pt-5">
+                            <!--Producto Lienzo_Llama-->
+                            <img src="../imagenes/Productos/Lienzo_Llama.JPG" alt=Lienzo_Llama class="img-fluid img-thumbnail">
+                            <p>Lienzo Personalizado Llama<br> Precio Regular: S/ 15 <br>Oferta: S/ 15</p>
+                        </div>
 
-                <article class="card__Funnybox__producto gradiente__img">
-                    <!--Producto Lienzo_Woody-->
-                    <img src="../imagenes/Productos/Lienzo_Woody.JPG" alt=Lienzo_Woody>
-                    <p>Lienzo Personalizado Woody</p>
-                    <p>Precio Regular: S/ 15</p>
-                    <p>Oferta: S/ 10</p>
-                </article>
+                    </div>
 
-
-                <article class="card__Funnybox__producto gradiente__img">
-                    <!--Producto Lienzo_Nopoygonta-->
-                    <img src="../imagenes/Productos/Lienzo_Nopoygonta.JPG" alt=Lienzo_Nopoygonta>
-                    <p>Lienzo Personalizado Pikachu</p>
-                    <p>Precio Regular: S/ 15</p>
-                    <p>Oferta: S/ 10</p>
-                </article>
-
-
-                <article class="card__Funnybox__producto gradiente__img">
-                    <!--Producto Lienzo_Payasito-->
-                    <img src="../imagenes/Productos/Lienzo_Payasito.JPG" alt=Lienzo_Payasito>
-                    <p>Lienzo Personalizado Payasito</p>
-                    <p>Precio Regular: S/ 15</p>
-                    <p>Oferta: S/ 10</p>
-                </article>
-
-
-                <article class="card__Funnybox__producto gradiente__img" >
-                    <!--Producto Lienzo_Llama-->
-                    <img src="../imagenes/Productos/Lienzo_Llama.JPG" alt=Lienzo_Llama>
-                    <p>Lienzo Personalizado Llama</p>
-                    <p>Precio Regular: S/ 15</p>
-                    <p>Oferta: S/ 10</p>
-                </article>
-            </main>
 
         </section>    
 
             <!--Pie de Página-->
-            <footer id="pageFooter" class="footer__Funnybox" >
-                <!--Imagen como link-->
-                <div>Lima - Perú 2022 - Síguenos en nuestras redes sociales</div>
-                <div>
-                    <a href="https://www.facebook.com/Funny-Box-Per%C3%BA-108836140896985"> 
-                        <img src="../imagenes/facebook.png" alt=Facebook" width="45px" height="45px">        
-                    </a>
+            <footer class="footer text-center">
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 offset-md-3" >
+                                <p>Lima - Perú 2022 - Síguenos en nuestras redes sociales</p>   
+                                        <a href="https://www.facebook.com/Funny-Box-Per%C3%BA-108836140896985"> 
+                                            <img src="../imagenes/facebook.png" alt=Facebook" width="45px" height="45px">        
+                                        </a>
+                                        <a href="https://www.instagram.com/funnybox_pe/?hl=es-la"> 
+                                            <img src="../imagenes/Instagram.png" alt=Instagram" width="45px" height="45px">        
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <a href="https://www.instagram.com/funnybox_pe/?hl=es-la"> 
-                        <img src="../imagenes/Instagram.png" alt=Instagram" width="45px" height="45px">        
-                    </a>
-                </div>
+                
             </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="../js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 
 
 </body>
