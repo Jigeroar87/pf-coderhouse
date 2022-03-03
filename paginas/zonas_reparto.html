@@ -5,72 +5,96 @@
     <link rel="icon" type="image/x-icon" href="../imagenes/Logo_FunnyBox.JPG">
     <link rel="stylesheet" href="../estilos/style.css">   
     <link rel="stylesheet" href="../estilos/animate.css">
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    
     <title>Funny Box</title>
 </head>
-<body class="body__Funnybox">
+
+
+<body>
 
     <!--la etiqueta <header> aporta información introductoria (como títulos, subtítulos, logos....)-->
-        <header id="pageHeader">
-        
-
+        <header>
             <!--<nav> es la Barra de Navegación-->
-            <nav class="nav__Funnybox">
-            
-                
-                <!--Menú Principal-->
-                <ul>
-                
-                    <!--Logo-->
-                    <li class="animate__animated animate__bounce animate__delay-1s animate__infinite animate__fast">
-                        <a href="../index.html"> 
-                            <img src="../imagenes/Logo_FunnyBox.JPG" alt=Instagram" width="45px" height="45px">        
-                        </a>
-                    </li>
-                
-                    <li><a href="../index.html"> &#10004; Inicio</a></li>
-                    <li><a href="productos.html"> &#10004; Productos</a></li>
-                    <li><a href="sobre_nosotros.html">&#10004; Sobre Nosotros</a></li>
-                    <li><a href="contactanos.html"> &#10004; Contáctanos</a></li>
-                    <li><a href="zonas_reparto.html"> &#10004; Zonas de Reparto</a></li>
-                
-                    <li><a href="https://www.facebook.com/Funny-Box-Per%C3%BA-108836140896985"> 
-                            <img src="../imagenes/facebook.png" alt=Facebook" width="45px" height="45px">        
-                        </a>
-                    </li>
-                
-                    <li><a href="https://www.instagram.com/funnybox_pe/?hl=es-la"> 
-                            <img src="../imagenes/Instagram.png" alt=Instagram" width="45px" height="45px">        
-                        </a>
-                    </li>
-                </ul>
+            <nav id="mainNav">
+                <div class="container-fluid " >
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="navbar ">
+                                    <li class="nav-item">
+                                        <a href="../index.html"> 
+                                            <img src="../imagenes/Logo_FunnyBox.JPG" alt=logo" width="45px" height="45px">        
+                                        </a>
+                                    </li>
+                                    <li class="nav-item ">
+                                      <a class="nav-link text-dark" href="../index.html">Inicio</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link text-dark" href="productos.html">Productos</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link text-dark" href="sobre_nosotros.html">Sobre nosotros</a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link text-dark" href="zonas_reparto.html">Zonas de reparto</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="contactanos.html">Contáctanos</a>
+                                      </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
             </nav>
         </header>
 
+        <section>
+            <div class="container-fluid bg-warning bg-opacity-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 pt-5">
+                            <h3 class="text-center">Zonas de Reparto</h3>
+                            <img src="../imagenes/Zonas_Reparto.JPG" class="img-fluid img-thumbnail rounded mx-auto d-block">
+                            <p>Zonas disponibles de Lima</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>   
 
-        <section id="mainSection" class="cards__Funnybox">
 
-            <article class="card__Funnybox__reparto gradiente__img">
-                <h1 id="Fondoh1">Zonas de Reparto</h1>
-                <!--Mapa de Zonas de Reparto-->
-                <img src="../imagenes/Zonas_Reparto.JPG" alt=Zonas_Reparto" width="800px" height="400px">
-                <p>Zonas disponibles de Lima</p>
-            </article>    
         </section>
 
             <!--Pie de Página-->
-            <footer id="pageFooter" class="footer__Funnybox" >
-                <!--Imagen como link-->
-                <div>Lima - Perú 2022 - Síguenos en nuestras redes sociales</div>
-                <div>
-                    <a href="https://www.facebook.com/Funny-Box-Per%C3%BA-108836140896985"> 
-                        <img src="../imagenes/facebook.png" alt=Facebook" width="45px" height="45px">        
-                    </a>
+            <footer class="footer text-center">
+                <div class="container-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 offset-md-3" >
+                                <p>Lima - Perú 2022 - Síguenos en nuestras redes sociales</p>   
+                                        <a href="https://www.facebook.com/Funny-Box-Per%C3%BA-108836140896985"> 
+                                            <img src="../imagenes/facebook.png" alt=Facebook" width="45px" height="45px">        
+                                        </a>
+                                        <a href="https://www.instagram.com/funnybox_pe/?hl=es-la"> 
+                                            <img src="../imagenes/Instagram.png" alt=Instagram" width="45px" height="45px">        
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <a href="https://www.instagram.com/funnybox_pe/?hl=es-la"> 
-                        <img src="../imagenes/Instagram.png" alt=Instagram" width="45px" height="45px">        
-                    </a>
-                </div>
+                
             </footer>
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="../js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
