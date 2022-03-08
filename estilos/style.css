@@ -6,16 +6,10 @@
 /*INICIO -> Mismo formato para todas las páginas para que sea uniforme*/
 
 body{
-	  overflow-x: hidden;
+	overflow-x: hidden;
     background-color: #E6DF7C ;
 }
 
-nav {
-	bottom: 0px;
-	left: 0px;
-  background-color: #6AC7E6;
-	list-style-type: none;
-}
 
 footer {
 	bottom: 0px;
@@ -29,6 +23,7 @@ footer {
 	background-color: #6AC7E6;
 	position: sticky;
 	list-style-type: none;
+    
 }
 
 
