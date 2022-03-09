@@ -3,17 +3,16 @@
   padding: 0; }
 
 body {
-  overflow-x: hidden;
-  background-color: #E6DF7C; }
+  overflow-x: hidden; }
 
 footer {
   bottom: 0px;
   left: 0px;
-  background-color: #6AC7E6;
+  background-color: green;
   list-style-type: none; }
 
 .navBackground {
-  background-color: #6AC7E6;
+  background-color: green;
   position: sticky;
   list-style-type: none; }
 
@@ -38,13 +37,9 @@ h1 {
   text-align: center; }
 
 article {
-  background-color: #E6DF7C;
   bottom: 5px;
   left: 300px;
   text-align: center; }
-
-#Fondoh1 {
-  background-color: #E6DF7C; }
 
 img {
   border-radius: 10px; }

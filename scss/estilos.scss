@@ -4,12 +4,10 @@
 
 }
 
-$color_body_article: #E6DF7C;
-$color_nav_footer: #6AC7E6;
+$color_nav_footer: green;
 
 body{
 	overflow-x: hidden;
-    background-color:  $color_body_article;
 }
 
 
@@ -54,15 +52,10 @@ h1{
 }
 
 article{
-    background-color: $color_body_article ;
 	  bottom: 5px;
 	  left: 300px;
     text-align: center;
 
-}
-
-#Fondoh1{
-    background-color:$color_body_article;
 }
 
 
