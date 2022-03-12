@@ -8,11 +8,11 @@ body {
 footer {
   bottom: 0px;
   left: 0px;
-  background-color: #6AC7E6;
+  background-color: red;
   list-style-type: none; }
 
 .navBackground {
-  background-color: #6AC7E6;
+  background-color: red;
   position: sticky;
   list-style-type: none; }
 
