@@ -32,3 +32,7 @@ Cómo mergear?
 git checkout rama-principal (nos paramos en la rama principal master o main, según sea el caso)
 git merge nombre-rama (mergeamos... traemos los cambios de esa rama a la rama principal)
   
+cuando no funciona .gitignore 
+git rm . -r --cached
+luego add
+
