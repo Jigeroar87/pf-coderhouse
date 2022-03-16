@@ -1,40 +1,19 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
 
+/*$color_nav_footer:#6AC7E6;*/
 body {
   overflow-x: hidden; }
 
 footer {
   bottom: 0px;
   left: 0px;
-  background-color: #6AC7E6;
   list-style-type: none; }
-
-.navBackground {
-  background-color: #6AC7E6;
-  position: sticky;
-  list-style-type: none; }
-
-ul {
-  font-style: italic;
-  list-style: none;
-  font-size: 0; }
-
-li {
-  font-style: italic;
-  display: inline-block;
-  width: 10%;
-  position: relative;
-  font-size: 1.2rem;
-  text-align: center; }
 
 .estiloLista {
   font-size: 2rem; }
-
-h1 {
-  font-style: italic;
-  text-align: center; }
 
 article {
   bottom: 5px;
@@ -44,13 +23,61 @@ article {
 img {
   border-radius: 10px; }
 
+.navBackground {
+  background-color: #6AC7E6;
+  position: sticky;
+  list-style-type: none; }
+
+/*uso mapas*/
+.nav__color {
+  background-color: #6AC7E6; }
+
+.section__color {
+  background-color: #E9D318; }
+
+.footer__color {
+  background-color: #6AC7E6; }
+
+/*No se utilizará solo para demostrar uso de map-get*/
+.prub__mapget, .prub__mapget--nueva {
+  background-color: #6AC7E6; }
+
+/*extend .navBackground == .prub__mapget--nueva*/
+.prub__mapget--nueva {
+  position: sticky;
+  list-style-type: none; }
+
+ul {
+  font-style: italic;
+  font-weight: bold;
+  list-style: none;
+  font-size: 0; }
+
+li {
+  font-style: italic;
+  font-weight: bold;
+  display: inline-block;
+  width: 10%;
+  position: relative;
+  font-size: 1.2rem;
+  text-align: center; }
+
 p {
   font-style: italic;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
+  text-align: center; }
+
+a {
+  font-style: italic;
+  font-weight: bold;
   text-align: center; }
 
 h2 {
   font-style: italic;
-  text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center; }
+
+h1 {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center; }
