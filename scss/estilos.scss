@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+/*$color_nav_footer:#6AC7E6;*/
+
+
+
+body{
+	overflow-x: hidden;
+}
+
+
+footer {
+	bottom: 0px;
+	left: 0px;
+	list-style-type: none;
+}
+
+
+.estiloLista{
+    font-size:2rem;
+}
+
+
+article{
+	  bottom: 5px;
+	  left: 300px;
+      text-align: center;
+
+}
+
+
+img {
+    border-radius: 10px;
+}
+
+
+.navBackground {
+	background-color: #6AC7E6;
+	position: sticky;
+	list-style-type: none;
+    
+}
+
+/*uso mapas*/
+$colores:(nav__color:#6AC7E6, section__color:#E9D318, footer__color: #6AC7E6);
+
+@each $clave, $valor in $colores {
+        .#{$clave} {
+            background-color: $valor;
+        }    
+}
+
+/*No se utilizará solo para demostrar uso de map-get*/
+.prub__mapget{
+    background-color: map-get($colores ,nav__color);
+}
+
+/*extend .navBackground == .prub__mapget--nueva*/
+.prub__mapget--nueva{
+    @extend .prub__mapget;
+    position: sticky;
+    list-style-type: none;
+}
+
+@mixin textoagg($fstyle,$fweight) {
+    font-style: $fstyle;
+    font-weight: $fweight;
+}
+
+ul {
+    @include textoagg(italic,bold);
+    list-style: none;
+    font-size:0;
+ }
+
+ li {
+    @include textoagg(italic,bold);
+    display: inline-block;
+    width: 10%;
+    position:relative;
+    font-size: 1.2rem;
+    text-align: center;
+ }
+
+ p {
+
+    @include textoagg(italic,bold);    
+    text-align: center;
+
+}
+
+a {
+
+    @include textoagg(italic,bold);    
+    text-align: center;
+
+}
+
+h2{
+    @include textoagg(italic,bold);
+    text-align: center;
+}
+
+h1{
+    @include textoagg(italic,bold);
+    text-align: center;    
+}
