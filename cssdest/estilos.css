@@ -28,6 +28,9 @@ img {
   position: sticky;
   list-style-type: none; }
 
+.fondo__pagina {
+  background-image: url(../imagenes/Fondo_pagina.jpg); }
+
 /*uso mapas*/
 .nav__color {
   background-color: #6AC7E6; }
