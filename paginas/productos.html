@@ -165,36 +165,47 @@
 
     <!--Script de Gestionar Productos-->  
     
-    <script src="../js/Auto.js"></script>
+    <script src="../js/Productos_Funnybox.js"></script>
     <script>
 
         document.getElementById("boton").onclick = function (){
                         
-                        let arreglo_autos = new Array();
+            let arreglo_producto = new Array();
 
-            let auto1 = new Auto ("fiat","uno",10000);
-            auto1.set_id(1);
-            let auto2 = new Auto ("peugeot","206",20000);
-            auto2.set_id(2);
-            let auto3 = new Auto ("Audi","A4",300000);
-            auto3.set_id(3);
-            arreglo_autos.push(auto1);
-            arreglo_autos.push(auto2);
-            arreglo_autos.push(auto3);
+            let producto1 = new Productos_Funnybox(
+                            "Alcancia Minie Mouse",15,10);
+            producto1.set_id(1);
+            
+            let producto2 = new Productos_Funnybox(
+                            "Alcancia Unicornio",15,10);
+            producto2.set_id(2);
+
+            let producto3 = new Productos_Funnybox(
+                            "Lienzo Personalizado Pikachu",10,8);
+            producto3.set_id(3);
+
+            let producto4 = new Productos_Funnybox(
+                            "Lienzo Personalizado Woody",10,8);
+            producto4.set_id(4);
+
+            arreglo_producto.push(producto1);
+            arreglo_producto.push(producto2);
+            arreglo_producto.push(producto3);
+            arreglo_producto.push(producto4);
 
 
 
             let gen_id = 1;
             const hoy = new Date();
-            alert("Bienvenidos al sistema de compra venta\n"+hoy.toLocaleString());
+            alert("Bienvenidos a Gestionar Productos FunnyBox\n"+hoy.toLocaleString());
 
             let flag = true ;
             while (flag) {
 
                 let mensaje = "Indique lo que desea hacer: ";
-                mensaje +=    "\n1) Cargar nuevo auto ";
-                mensaje +=    "\n2) Eliminar auto ";
-                mensaje +=    "\n3) Mostrar Autos en stock " ;
+                mensaje +=    "\n1) Cargar nuevo producto ";
+                mensaje +=    "\n2) Eliminar producto ";
+                mensaje +=    "\n3) Mostrar productos en stock " ;
                 mensaje +=    "\n4) Aplicar descuento " ;
                 mensaje +=    "\n5) Salir " ;
 
@@ -203,13 +214,13 @@
                 switch (resp){
 
                     case "1" : 
-                            ingresar_nuevo_auto();
+                            ingresar_nuevo_producto();
                             break;
                     case "2" :          
-                            eliminar_auto();
+                            eliminar_producto();
                             break;
                     case "3" :
-                            mostrar_autos();
+                            mostrar_producto();
                             break;
                     case "4"  : 
                             aplicar_descuento();
@@ -230,29 +241,29 @@
             }
 
 
-            function solicitar_datos_auto(){
+            function solicitar_datos_producto(){
                 let check = true ;
                 
                 while (check){
                     let msj = "";
-                    let marca = prompt("Ingrese marca").trim();
-                    let modelo = prompt ("ingrese modelo").trim();
-                    let precio = parseFloat(prompt ("Ingrese precio"));   
+                    let nombre = prompt("Ingrese nombre").trim();
+                    let precio = parseFloat(prompt ("Ingrese precio"));
+                    let oferta = parseFloat(prompt ("Ingrese oferta"));   
 
-                        if (!marca){
+                        if (!nombre){
 
-                            msj += "\nDebe ingresar marca";
+                            msj += "\nDebe ingresar nombre";
 
-                        }
-
-                        if (!modelo){
-
-                            msj += "\nDebe ingresar modelo" ;
                         }
 
                         if (isNaN(precio)){
 
                             msj += "\nDebe ingresar un valor numerico en precio";
+                        }
+
+                        if (isNaN(oferta)){
+
+                            msj += "\nDebe ingresar un valor numerico en oferta";
 
                         }
 
@@ -265,7 +276,7 @@
                         }else{
 
 
-                            return new Auto (marca,modelo,precio);
+                            return new Productos_Funnybox (nombre,precio,oferta);
 
                         }
 
@@ -277,17 +288,17 @@
 
             }
 
-            function ingresar_nuevo_auto (){
+            function ingresar_nuevo_producto (){
 
-                let auto = solicitar_datos_auto();
+                let producto = solicitar_datos_producto();
 
-                if (auto){
+                if (producto){
 
                     
-                    auto.set_id(gen_id) ;
+                    producto.set_id(gen_id) ;
                     gen_id ++;
-                    arreglo_autos.push(auto);
-                    alert("Auto agregado con exito!")
+                    arreglo_producto.push(producto);
+                    alert("Producto agregado con exito!")
 
                 }
 
@@ -295,26 +306,26 @@
             }
 
 
-            function eliminar_auto(){
+            function eliminar_producto(){
 
-                if (existen_autos()) {
+                if (existe_producto()) {
 
                     mostrar_arreglo();
 
-                    let id_ingresado = prompt("Ingrese el id del auto a eliminar").trim();
+                    let id_ingresado = prompt("Ingrese el id del producto a eliminar").trim();
 
                     if (id_ingresado){
 
-                        let auto_encontrado = arreglo_autos.find((a)=> a.id == id_ingresado)
+                        let producto_encontrado = arreglo_producto.find((a)=> a.id == id_ingresado)
                         
-                        if (auto_encontrado) {
+                        if (producto_encontrado) {
 
-                            let resp = confirm("Esta seguro que desea eliminar el auto "+auto_encontrado.mostrar_descripcion() + " ?");
+                            let resp = confirm("Esta seguro que desea eliminar el producto "+producto_encontrado.mostrar_descripcion() + " ?");
                             if (resp){
 
-                                arreglo_autos = arreglo_autos.filter((a) => a.id != id_ingresado ) ;
+                                arreglo_producto = arreglo_producto.filter((a) => a.id != id_ingresado ) ;
 
-                                alert("Auto eliminado con exito");
+                                alert("Producto eliminado con exito");
                                 
 
                             }
@@ -331,14 +342,14 @@
 
             }
 
-            function mostrar_autos(){
+            function mostrar_producto(){
 
-                if (existen_autos()) {
+                if (existe_producto()) {
 
                     let resp = prompt("La info se mostrara ordenada por precio.\n Desea verla en forma Ascendente (A) o Desendente (D)").toUpperCase() ;
                     if (resp == "A") {
 
-                        arreglo_autos.sort((a,b) =>{
+                        arreglo_producto.sort((a,b) =>{
                             
                             if (a.precio > b.precio) {
                                 return 1;
@@ -353,7 +364,7 @@
 
                     if (resp == "D"){
 
-                        arreglo_autos.sort((a,b) =>{
+                        arreglo_producto.sort((a,b) =>{
                             
                             if (a.precio > b.precio) {
                                 return -1;
@@ -377,10 +388,10 @@
 
 
             function mostrar_arreglo(){
-                let mensaje = "Los autos en stock son";  
+                let mensaje = "Los productos en stock son";  
                 
-                arreglo_autos.forEach( (auto)=> {
-                    mensaje += "\n " + auto.mostrar_descripcion();
+                arreglo_producto.forEach( (producto)=> {
+                    mensaje += "\n " + producto.mostrar_descripcion();
                 })
 
                 alert(mensaje);    
@@ -389,10 +400,10 @@
             }
 
 
-            function existen_autos(){
+            function existe_producto(){
 
-                if (arreglo_autos.length == 0){
-                    alert("No hay autos en stock");
+                if (arreglo_producto.length == 0){
+                    alert("No hay productos en stock");
 
                     return false;
 
