@@ -195,19 +195,18 @@
 
 
 
-            let gen_id = 1;
+            let gen_id = 5;
             const hoy = new Date();
             alert("Bienvenidos a Gestionar Productos FunnyBox\n"+hoy.toLocaleString());
 
             let flag = true ;
             while (flag) {
 
-                let mensaje = "Indique lo que desea hacer: ";
-                mensaje +=    "\n1) Cargar nuevo producto ";
+                let mensaje = "Ud. puede realizar las siguientes acciones: ";
+                mensaje +=    "\n1) Agregar producto ";
                 mensaje +=    "\n2) Eliminar producto ";
                 mensaje +=    "\n3) Mostrar productos en stock " ;
-                mensaje +=    "\n4) Aplicar descuento " ;
-                mensaje +=    "\n5) Salir " ;
+                mensaje +=    "\n4) Salir" ;
 
                 let resp = prompt (mensaje);
 
@@ -222,19 +221,16 @@
                     case "3" :
                             mostrar_producto();
                             break;
-                    case "4"  : 
-                            aplicar_descuento();
-                            break;
-                    case "5" : 
-                            alert("Gracias por utilizar nuestra pagina :) ");
+                    case "4" : 
+                            alert("Gracias por utilizar Gestor de productos Funnybox :) ");
                             flag=false;
                             break;        
                     case null : 
-                            alert("Gracias por utilizar nuestra pagina :) ");
+                            alert("Gracias por utilizar Gestor de productos Funnybox :) ");
                             flag=false;
                             break;
                     default : 
-                            alert ("No ingreso una opcion valida") ;                     
+                            alert ("No ingresó una opción valida") ;                     
 
 
                 }
@@ -258,12 +254,12 @@
 
                         if (isNaN(precio)){
 
-                            msj += "\nDebe ingresar un valor numerico en precio";
+                            msj += "\nDebe ingresar un valor numérico en precio";
                         }
 
                         if (isNaN(oferta)){
 
-                            msj += "\nDebe ingresar un valor numerico en oferta";
+                            msj += "\nDebe ingresar un valor numérico en oferta";
 
                         }
 
@@ -298,7 +294,7 @@
                     producto.set_id(gen_id) ;
                     gen_id ++;
                     arreglo_producto.push(producto);
-                    alert("Producto agregado con exito!")
+                    alert("Producto agregado con éxito!")
 
                 }
 
@@ -325,12 +321,14 @@
 
                                 arreglo_producto = arreglo_producto.filter((a) => a.id != id_ingresado ) ;
 
-                                alert("Producto eliminado con exito");
+                                alert("Producto eliminado con éxito");
                                 
 
                             }
 
 
+                        }else{
+                            alert("Ingrese id correcto");
                         }
 
 
@@ -360,9 +358,12 @@
                             
                             return 0;
                         })
+
+                        mostrar_arreglo();
+
                     }
 
-                    if (resp == "D"){
+                    else if (resp == "D"){
 
                         arreglo_producto.sort((a,b) =>{
                             
@@ -375,9 +376,16 @@
                             
                             return 0;
                         })
+
+                        mostrar_arreglo();
                     }
 
-                    mostrar_arreglo();
+                    else {
+                        alert("Ingrese valor adecuado para ordenamiento");
+                    }
+
+
+                    
                 
                 }
 
@@ -413,31 +421,7 @@
 
             }
 
-            function aplicar_descuento(){
 
-
-                if (existen_autos) {
-                    let descuento = parseInt(prompt("Ingrese el descuento a aplicar"));
-                    
-                    if (!isNaN(descuento)){
-
-                        let desc = descuento / 100 ;
-
-                        const arreglo_aux = arreglo_autos.map((aut) => {
-                            return {
-                                marca: aut.nombre,
-                                modelo : aut.modelo ,
-                                precio: aut.precio * desc
-                            }
-                        })        
-
-                        
-                    }
-
-                    mostrar_arreglo();
-                }
-
-            }
         }
 
     </script>

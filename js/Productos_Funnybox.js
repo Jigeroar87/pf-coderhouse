@@ -26,7 +26,7 @@ class Productos_Funnybox {
      */
 
     mostrar_descripcion(){
-        return (this.id + " - " +this.nombre + " - " + this.precio + " - $" + this.oferta) ;
+        return (this.id + " - " +this.nombre + " - S/" + this.precio + " - S/" + this.oferta) ;
     }
 
     /*
