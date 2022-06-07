@@ -25,6 +25,10 @@
 
 <body>
 
+            <!--Carga Productos-->
+            <script src="../js/Carga_Productos.js"></script>
+
+
     <!--la etiqueta <header> aporta información introductoria (como títulos, subtítulos, logos....)-->
         <!--<nav> es la Barra de Navegación-->
             <header>
@@ -64,76 +68,17 @@
             
             <div class="container-fluid  pt-5" >
                 <div class="container">   
-                    <div class="row">
+                    <div class="row" id="card-container">
                         <h1 class="h1__Funnybox__producto">Nuestros Regalos Divertidos para Niños</h1>
                         
                         <div>
                         <button id="boton" type="button" class="btn btn-outline-dark btn-lg">Gestionar Productos</button>   
                         </div>    
 
-                        <div class="col-6 col-sm-4 col-md-3 pt-5">
-                            <!--Producto Alcancia_Minie-->
-                            <img src="../imagenes/Productos/Alcancia_Minie.JPG" alt=Alcancia_Minie class="img-fluid img-thumbnail">
-                            <p>Alcancia Minie Mouse</p>
-                            <p><del>Precio Regular: S/ 15</del></p>
-                            <p>Oferta: S/ 10</p>
-                        </div>
                         
-                        <div class="col-6 col-sm-4 col-md-3 pt-5">
-                            <!--Producto Alcancia_Unicornio-->
-                            <img src="../imagenes/Productos/Alcancia_Unicornio.JPG" alt=Alcancia_Unicornio class="img-fluid img-thumbnail">
-                            <p>Alcancia Unicornio <br> Precio Regular: S/ 15 <br>Oferta: S/ 10</p>   
-                        </div>
-
-                        <div class="col-6 col-sm-4 col-md-3 pt-5">
-                            <!--Producto Alcancia_Lulu-->
-                            <img src="../imagenes/Productos/Alcancia_Lulu.JPG" alt=Alcancia_Lulu class="img-fluid img-thumbnail">
-                            <p>Alcancia Pequeña Lulú <br> Precio Regular: S/ 15 <br>Oferta: S/ 10</p>
-                            
-                        </div>
-
-                        <div class="col-6 col-sm-4 col-md-3 pt-5">
-                            <!--Producto Alcancia_Hulk-->
-                            <img src="../imagenes/Productos/Alcancia_Hulk.JPG" alt=Alcancia_Hulk class="img-fluid img-thumbnail">
-                            <p>Alcancia Increíble Hulk <br> Precio Regular: S/ 15 <br>Oferta: S/ 10</p> 
-                        </div>                        
-
-                        <div class="col-6 col-sm-4 col-md-3 pt-5">
-                            <!--Producto Alcancia_Darkvader-->
-                            <img src="../imagenes/Productos/Alcancia_Darkvader.JPG" alt=Alcancia_Darkvader class="img-fluid img-thumbnail">
-                            <p>Alcancia Dark Vader<br> Precio Regular: S/ 15 <br>Oferta: S/ 10</p>
-
-                        </div>
-                        
-                        <div class="col-6 col-sm-4 col-md-3 pt-5">
-                            <!--Producto Lienzo_Pikachu-->
-                            <img src="../imagenes/Productos/Lienzo_Pikachu.JPG" alt=Lienzo_Pikachu class="img-fluid img-thumbnail">
-                            <p>Lienzo Personalizado Pikachu<br> Precio Regular: S/ 10 <br>Oferta: S/ 8</p>                
-                        </div>
-
-                        <div class="col-6 col-sm-4 col-md-3 pt-5">
-                            <!--Producto Lienzo_Woody-->
-                            <img src="../imagenes/Productos/Lienzo_Woody.JPG" alt=Lienzo_Woody class="img-fluid img-thumbnail">
-                            <p>Lienzo Personalizado Woody<br> Precio Regular: S/ 10 <br>Oferta: S/ 8</p>
-                        </div>
-
-                        <div class="col-6 col-sm-4 col-md-3 pt-5">
-                            <!--Producto Lienzo_Nopoygonta-->
-                            <img src="../imagenes/Productos/Lienzo_Nopoygonta.JPG" alt=Lienzo_Nopoygonta class="img-fluid img-thumbnail">
-                            <p>Lienzo Personalizado Pikachu<br> Precio Regular: S/ 10 <br>Oferta: S/ 8</p>
-                        </div>
-
-                        <div class="col-6 col-sm-4 col-md-3 pt-5">
-                            <!--Producto Lienzo_Payasito-->
-                            <img src="../imagenes/Productos/Lienzo_Payasito.JPG" alt=Lienzo_Payasito class="img-fluid img-thumbnail">
-                            <p>Lienzo Personalizado Payasito<br> Precio Regular: S/ 10 <br>Oferta: S/ 8</p>
-                        </div>
-
-                        <div class="col-6 col-sm-4 col-md-3 pt-5">
-                            <!--Producto Lienzo_Llama-->
-                            <img src="../imagenes/Productos/Lienzo_Llama.JPG" alt=Lienzo_Llama class="img-fluid img-thumbnail">
-                            <p>Lienzo Personalizado Llama<br> Precio Regular: S/ 10 <br>Oferta: S/ 8</p>
-                        </div>
+                        <script>
+                            initListOfTasks(); // Here you go
+                        </script>
 
                     </div>
 
