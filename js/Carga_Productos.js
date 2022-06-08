@@ -70,3 +70,42 @@ let items = [
         "Tipo": "Lienzo"
     },
 ]
+
+
+let cardContainer;
+
+function createitemCard(item) {
+  
+  let card = document.createElement('div');
+  card.innerHTML = '';
+
+  card.className = 'col-6 col-sm-4 col-md-3 pt-5';
+
+  let cardBody = document.createElement('div');
+  cardBody.className = 'card-body';
+
+  let imagen = document.createElement('img');
+  imagen.src = item.Foto;
+  imagen.className = 'img-fluid img-thumbnail';
+
+  let producto = document.createElement('p');
+  producto.innerHTML = `<p>${item.Producto} <br> ${item.Precio} <br> ${item.Oferta} </p>`;
+
+  cardBody.appendChild(imagen);
+  cardBody.appendChild(producto);
+  card.appendChild(cardBody);
+  cardContainer.appendChild(card);
+
+}
+
+
+function initListOfitems(arrayitems) {
+
+  cardContainer = document.getElementById('card-container');
+  cardContainer.innerHTML="";
+  
+  arrayitems.forEach((item) => {
+    createitemCard(item);
+  });
+};
+
