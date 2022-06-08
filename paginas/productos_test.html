@@ -27,6 +27,9 @@
 
             <!--Carga Productos-->
             <script src="../js/Carga_Productos.js"></script>
+            <!--Filtro Productos-->
+            <script src="../js/Filtro.js"></script>
+
 
 
     <!--la etiqueta <header> aporta información introductoria (como títulos, subtítulos, logos....)-->
@@ -75,9 +78,26 @@
                         <button id="boton" type="button" class="btn btn-outline-dark btn-lg">Gestionar Productos</button>   
                         </div>    
 
-                        
+                        <div>
+                            <p>Aplicar Filtro por Tipo de Producto</p>
+                            <div id="container-radio">
+                                <label>
+                                    <span>Alcancias</span>
+                                    <input type="radio" name="filtro" value="Alcancia" class="radio">
+                                </label>
+                                <label>
+                                    <span>Lienzos</span>
+                                    <input type="radio" name="filtro" value="Lienzo" class="radio">
+                                </label>
+                               <label>
+                                    <span>Todos</span>
+                                    <input type="radio" name="filtro" value="todos" class="radio">
+                               </label>
+                            </div>
+                        </div>
+
                         <script>
-                            initListOfTasks(); // Here you go
+                            initListOfitems(); // Here you go
                         </script>
 
                     </div>

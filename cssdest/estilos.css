@@ -84,3 +84,18 @@ h1 {
   font-style: italic;
   font-weight: bold;
   text-align: center; }
+
+  #container-radio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#container-radio label{
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
