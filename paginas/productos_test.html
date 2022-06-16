@@ -13,7 +13,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    
-
+    
    <meta name="description" content="FunnyBox regalo para niños que hace volar su creatividad, mediante diversión y entretenimiento en Lima">
    <meta name="keywords" content="juego para niños regalo hijo obsequio hija diversión sobrino creatividad sobrina entretenimiento nieto nieta delivery en Lima">
 
@@ -26,8 +26,8 @@
 <body>
 
 
-
-
+    <script src="sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 
 
     <!--la etiqueta <header> aporta información introductoria (como títulos, subtítulos, logos....)-->
@@ -141,6 +141,45 @@
 
     <!--Dom y Eventos-->
     <script src="../js/Dom_Eventos.js"></script>
+
+    <script src="../js/main.js"></script>
+
+    <script>
+
+        let boton1 = document.getElementById("1");
+
+        boton1.addEventListener("click",(event)=>{
+
+
+            mostrar_mensaje("Próximamente","Carrito de compras para producto ID=1","../imagenes/cart.jpeg");
+
+            Toastify({
+                text: "Producto Agregado",
+                duration: 3000,
+                position: 'right',
+                gravity: 'top'
+            }).showToast();
+
+        })
+
+        function mostrar_mensaje(titulo,mensaje,rutaimagen){
+            
+            Swal.fire({
+            title: titulo,
+            text: mensaje,
+            imageUrl: rutaimagen,
+            imageWidth: 400,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+            })
+
+        }
+
+
+
+        
+
+    </script>
 
     <script>
 
@@ -402,7 +441,8 @@
 
     </script>
 
-    
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 
 </body>
 </html>

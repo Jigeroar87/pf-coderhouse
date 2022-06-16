@@ -29,3 +29,12 @@ inputFocus.addEventListener('blur', ()=>{
     inputFocus.style.border = "1px solid black";
     msjRecomendation.textContent = "";
 })
+
+let boton1 = document.getElementById("1");
+
+boton1.addEventListener("click",(event)=>{
+
+                alert("boton1");
+
+})
+

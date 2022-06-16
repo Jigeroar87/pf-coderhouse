@@ -5,7 +5,7 @@ let items = [
         "Oferta": "Oferta: S/ 10",
         "Foto": "../imagenes/Productos/Alcancia_Minie.JPG",
         "Tipo": "Alcancia",
-        "ID": 1,
+        "ID": "1",
         "Soles": 10
     },
     {
@@ -113,7 +113,7 @@ function createitemCard(item) {
 
   let boton = document.createElement('button'); 
   boton.className = "btn btn-outline-dark btn-lg agregar-carrito";
-  boton.innerHTML = `<a data-id=${item.ID}>Comprar</a>`;
+  boton.innerHTML = `<a ID=${item.ID}>Comprar</a>`;
 
   cardBody.appendChild(imagen);
   cardBody.appendChild(producto);
