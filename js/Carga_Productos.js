@@ -14,7 +14,7 @@ let items = [
         "Oferta": "Oferta: S/ 10",
         "Foto": "../imagenes/Productos/Alcancia_Unicornio.JPG",
         "Tipo": "Alcancia",
-        "ID": 2,
+        "ID": "2",
         "Soles": 10
     },
     {
@@ -23,7 +23,7 @@ let items = [
         "Oferta": "Oferta: S/ 10",
         "Foto": "../imagenes/Productos/Alcancia_Lulu.JPG",
         "Tipo": "Alcancia",
-        "ID": 3,
+        "ID": "3",
         "Soles": 10
     },
     {
@@ -32,7 +32,7 @@ let items = [
         "Oferta": "Oferta: S/ 10",
         "Foto": "../imagenes/Productos/Alcancia_Hulk.JPG",
         "Tipo": "Alcancia",
-        "ID": 4,
+        "ID": "4",
         "Soles": 10
     },
     {
@@ -41,7 +41,7 @@ let items = [
         "Oferta": "Oferta: S/ 10",
         "Foto": "../imagenes/Productos/Alcancia_Darkvader.JPG",
         "Tipo": "Alcancia",
-        "ID": 5,
+        "ID": "5",
         "Soles": 10
     },
     {
@@ -50,7 +50,7 @@ let items = [
         "Oferta": "Oferta: S/ 8",
         "Foto": "../imagenes/Productos/Lienzo_Pikachu.JPG",
         "Tipo": "Lienzo",
-        "ID": 6,
+        "ID": "6",
         "Soles": 8
     },
     {
@@ -59,7 +59,7 @@ let items = [
         "Oferta": "Oferta: S/ 8",
         "Foto": "../imagenes/Productos/Lienzo_Woody.JPG",
         "Tipo": "Lienzo",
-        "ID": 7,
+        "ID": "7",
         "Soles": 8
     },
     {
@@ -68,7 +68,7 @@ let items = [
         "Oferta": "Oferta: S/ 8",
         "Foto": "../imagenes/Productos/Lienzo_Nopoygonta.JPG",
         "Tipo": "Lienzo",
-        "ID": 8,
+        "ID": "8",
         "Soles": 8
     },
     {
@@ -77,7 +77,7 @@ let items = [
         "Oferta": "Oferta: S/ 8",
         "Foto": "../imagenes/Productos/Lienzo_Payasito.JPG",
         "Tipo": "Lienzo",
-        "ID": 9,
+        "ID": "9",
         "Soles": 8
     },
     {
@@ -86,7 +86,7 @@ let items = [
         "Oferta": "Oferta: S/ 8",
         "Foto": "../imagenes/Productos/Lienzo_Llama.JPG",
         "Tipo": "Lienzo",
-        "ID": 10,
+        "ID": "10",
         "Soles": 8
     },
 ]
@@ -112,6 +112,7 @@ function createitemCard(item) {
   producto.innerHTML = `<p>${item.Producto} <br> ${item.Precio} <br> ${item.Oferta} </p>`;
 
   let boton = document.createElement('button'); 
+  boton.innerHTML='';
   boton.className = "btn btn-outline-dark btn-lg agregar-carrito";
   boton.innerHTML = `<a ID=${item.ID}>Comprar</a>`;
 
