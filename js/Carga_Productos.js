@@ -42,12 +42,12 @@ function createitemCard(item) {
 }
 
 
-function initListOfitems(arrayitems) {
+function initListOfitems(array) {
 
   cardContainer = document.getElementById('card-container');
   cardContainer.innerHTML="";
   
-  arrayitems.forEach((item) => {
+  array.forEach((item) => {
     createitemCard(item);
   });
 };
