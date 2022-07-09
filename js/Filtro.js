@@ -23,7 +23,7 @@ function filtrarTabla(evento){
     let inputValue = evento.target.value.toUpperCase();
     
     if(inputValue != "TODOS"){
-        arrayitems = items.filter((elemento) => {
+        arrayitems = items_fetch.filter((elemento) => {
             return elemento.Tipo.toUpperCase() === inputValue;
         })
     }else{
