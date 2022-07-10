@@ -10,6 +10,8 @@ Desarrollo del sitio
 Creación y desarrollo de las páginas diseñadas previamente en HTML5 aplicando
 herramientas de Bootstrap y diseño personalizado con CSS.
 
+Efectos visuales, Generación dínamica de CARDS y Carro de compras en JS.
+
 Diseño gráfico personalizado
 Adaptación de logo y edición de fotografías a utilizarse en el sitio.
 
