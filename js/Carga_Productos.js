@@ -34,7 +34,7 @@ function createitemCard(item) {
   
   let oferta = document.createElement('p');
   oferta.innerHTML = `<p>${item.Oferta} </p>`;
-  oferta.className = "item-title";
+  oferta.className = "item-price";
   
   let boton = document.createElement('button'); 
   boton.innerHTML='';

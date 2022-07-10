@@ -26,7 +26,7 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
     'shoppingCartItemTitle'
   );
   for (let i = 0; i < elementsTitle.length; i++) {
-    if (elementsTitle[i].innerText === itemTitle) {
+    if (elementsTitle[i].innerText == itemTitle) {
       let elementQuantity = elementsTitle[
         i
       ].parentElement.parentElement.parentElement.querySelector(
@@ -44,7 +44,7 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
   <div class="row shoppingCartItem">
         <div class="col-6">
             <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
-                <img src=${itemImage} class="shopping-cart-image">
+                <img src=${itemImage} class="img-fluid img-thumbnail shopping-cart-image" width="45px" height="45px">
                 <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">${itemTitle}</h6>
             </div>
         </div>
@@ -87,7 +87,7 @@ function updateShoppingCartTotal() {
       '.shoppingCartItemPrice'
     );
     const shoppingCartItemPrice = Number(
-      shoppingCartItemPriceElement.textContent.replace('€', '')
+      shoppingCartItemPriceElement.textContent.replace('Oferta: S/ ', '')
     );
     const shoppingCartItemQuantityElement = shoppingCartItem.querySelector(
       '.shoppingCartItemQuantity'
@@ -97,7 +97,7 @@ function updateShoppingCartTotal() {
     );
     total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
   });
-  shoppingCartTotal.innerHTML = `${total.toFixed(2)}€`;
+  shoppingCartTotal.innerHTML = ` S/ ${total.toFixed(2)}`;
 }
 
 function removeShoppingCartItem(event) {
