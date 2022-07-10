@@ -19,22 +19,32 @@ function createitemCard(item) {
   card.className = 'col-6 col-sm-4 col-md-3 pt-5';
 
   let cardBody = document.createElement('div');
-  cardBody.className = 'card-body';
+  cardBody.className = 'card-body item';
 
   let imagen = document.createElement('img');
   imagen.src = item.Foto;
-  imagen.className = 'img-fluid img-thumbnail';
+  imagen.className = 'img-fluid img-thumbnail item-image';
 
   let producto = document.createElement('p');
-  producto.innerHTML = `<p>${item.Producto} <br> ${item.Precio} <br> ${item.Oferta} </p>`;
-
+  producto.innerHTML = `<p>${item.Producto} </p>`;
+  producto.className = "item-title";
+  
+  let precio = document.createElement('p');
+  precio.innerHTML = `<p>${item.Precio} </p>`;
+  
+  let oferta = document.createElement('p');
+  oferta.innerHTML = `<p>${item.Oferta} </p>`;
+  oferta.className = "item-title";
+  
   let boton = document.createElement('button'); 
   boton.innerHTML='';
-  boton.className = "btn btn-outline-dark btn-lg agregar-carrito";
+  boton.className = "btn btn-outline-dark btn-lg addToCart";
   boton.innerHTML = `<a ID=${item.ID}>Comprar</a>`;
 
-  cardBody.appendChild(imagen);
   cardBody.appendChild(producto);
+  cardBody.appendChild(imagen);
+  cardBody.appendChild(precio);
+  cardBody.appendChild(oferta);
   cardBody.appendChild(boton);
   card.appendChild(cardBody);
   cardContainer.appendChild(card);
