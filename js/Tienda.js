@@ -1,3 +1,16 @@
+function mostrar_mensaje(titulo,mensaje,rutaimagen){
+    
+  Swal.fire({
+  title: titulo,
+  text: mensaje,
+  imageUrl: rutaimagen,
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+  })
+
+};
+
 const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
 addToShoppingCartButtons.forEach((addToCartButton) => {
   addToCartButton.addEventListener('click', addToCartClicked);
@@ -18,6 +31,8 @@ function addToCartClicked(event) {
   const itemPrice = item.querySelector('.item-price').textContent;
   const itemImage = item.querySelector('.item-image').src;
 
+  mostrar_mensaje("Producto Agregado", "El total de de tu pedido se encuentra en la parte inferior","../imagenes/cart.jpeg");
+
   addItemToShoppingCart(itemTitle, itemPrice, itemImage);
 }
 
@@ -26,7 +41,9 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
     'shoppingCartItemTitle'
   );
   for (let i = 0; i < elementsTitle.length; i++) {
-    if (elementsTitle[i].innerText == itemTitle) {
+    if (elementsTitle[i].innerText === itemTitle) {
+      console.log(elementsTitle[i].innerText);
+      console.log(itemTitle);
       let elementQuantity = elementsTitle[
         i
       ].parentElement.parentElement.parentElement.querySelector(

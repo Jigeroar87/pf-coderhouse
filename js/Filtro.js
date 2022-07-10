@@ -15,7 +15,7 @@ initListOfitems(arrayitems);
 const inputRadio = document.getElementsByClassName("radio");
 
 for(const input of inputRadio){
-    input.addEventListener("change", filtrarTabla)
+    input.addEventListener('click', filtrarTabla)
 }
 
 
@@ -34,8 +34,7 @@ function filtrarTabla(evento){
     
     initListOfitems(arrayitems);
 
-    /*botones internos*/ 
-
+    /* */
     function mostrar_mensaje(titulo,mensaje,rutaimagen){
     
         Swal.fire({
@@ -46,229 +45,135 @@ function filtrarTabla(evento){
         imageHeight: 200,
         imageAlt: 'Custom image',
         })
-    
-    }
-    
-    
-    let boton1 = document.getElementById("1");
-    
-    try {
-        boton1.addEventListener("click",(event)=>{
-    
-            mostrar_mensaje("Próximamente","Carrito de compras para producto ID=1 | Mira a la esquina superior derecha","../imagenes/cart.jpeg");
-        
-            Toastify({
-                text: "Producto 1 Agregado",
-                duration: 3000,
-                position: 'right',
-                gravity: 'top'
-            }).showToast();
-        
-        })    
-    } catch (error) {
-        
-    }
-    
-    try {
-        let boton2 = document.getElementById("2");
-    
-        boton2.addEventListener("click",(event)=>{
-        
-        
-            mostrar_mensaje("Próximamente","Carrito de compras para producto ID=2 | Mira a la esquina superior derecha","../imagenes/cart.jpeg");
-        
-            Toastify({
-                text: "Producto 2 Agregado",
-                duration: 3000,
-                position: 'right',
-                gravity: 'top'
-            }).showToast();
-        
-        })    
-    } catch (error) {
-        
-    }
-    
-    
-    try {
-        let boton3 = document.getElementById("3");
-    
-        boton3.addEventListener("click",(event)=>{
-        
-        
-            mostrar_mensaje("Próximamente","Carrito de compras para producto ID=3 | Mira a la esquina superior derecha","../imagenes/cart.jpeg");
-        
-            Toastify({
-                text: "Producto 3 Agregado",
-                duration: 3000,
-                position: 'right',
-                gravity: 'top'
-            }).showToast();
-        
-        })    
-    } catch (error) {
-        
-    }
-    
-    
-    try {
-        let boton4 = document.getElementById("4");
-    
-        boton4.addEventListener("click",(event)=>{
-        
-        
-            mostrar_mensaje("Próximamente","Carrito de compras para producto ID=4 | Mira a la esquina superior derecha","../imagenes/cart.jpeg");
-        
-            Toastify({
-                text: "Producto 4 Agregado",
-                duration: 3000,
-                position: 'right',
-                gravity: 'top'
-            }).showToast();
-        
-        })
-            
-    } catch (error) {
-        
-    }
-    
-    try {
-        let boton5 = document.getElementById("5");
-    
-        boton5.addEventListener("click",(event)=>{
-        
-        
-            mostrar_mensaje("Próximamente","Carrito de compras para producto ID=5 | Mira a la esquina superior derecha","../imagenes/cart.jpeg");
-        
-            Toastify({
-                text: "Producto 5 Agregado",
-                duration: 3000,
-                position: 'right',
-                gravity: 'top'
-            }).showToast();
-        
-        })
-            
-    } catch (error) {
-        
-    }
-    
-    
-    try {
-        let boton6 = document.getElementById("6");
-    
-    boton6.addEventListener("click",(event)=>{
-    
-    
-        mostrar_mensaje("Próximamente","Carrito de compras para producto ID=6 | Mira a la esquina superior derecha","../imagenes/cart.jpeg");
-    
-        Toastify({
-            text: "Producto 6 Agregado",
-            duration: 3000,
-            position: 'right',
-            gravity: 'top'
-        }).showToast();
-    
-    })
-    } catch (error) {
-        
-    }
-
-    
-    
-    try {
-        let boton7 = document.getElementById("7");
-    
-        boton7.addEventListener("click",(event)=>{
-        
-        
-            mostrar_mensaje("Próximamente","Carrito de compras para producto ID=7 | Mira a la esquina superior derecha","../imagenes/cart.jpeg");
-        
-            Toastify({
-                text: "Producto 7 Agregado",
-                duration: 3000,
-                position: 'right',
-                gravity: 'top'
-            }).showToast();
-        
-        })        
-    } catch (error) {
-        
-    }
-
-
-    try {
-        let boton8 = document.getElementById("8");
-    
-        boton8.addEventListener("click",(event)=>{
-        
-        
-            mostrar_mensaje("Próximamente","Carrito de compras para producto ID=8 | Mira a la esquina superior derecha","../imagenes/cart.jpeg");
-        
-            Toastify({
-                text: "Producto 8 Agregado",
-                duration: 3000,
-                position: 'right',
-                gravity: 'top'
-            }).showToast();
-        
-        })
-            
-    } catch (error) {
-        
-    }
-    
-    
-try {
-    let boton9 = document.getElementById("9");
-    
-    boton9.addEventListener("click",(event)=>{
-    
-    
-        mostrar_mensaje("Próximamente","Carrito de compras para producto ID=9 | Mira a la esquina superior derecha","../imagenes/cart.jpeg");
-    
-        Toastify({
-            text: "Producto 9 Agregado",
-            duration: 3000,
-            position: 'right',
-            gravity: 'top'
-        }).showToast();
-    
-    })
-    
-} catch (error) {
-    
-}
-    
-try {
-    let boton10 = document.getElementById("10");
-    
-    boton10.addEventListener("click",(event)=>{
-    
-    
-        mostrar_mensaje("Próximamente","Carrito de compras para producto ID=10 | Mira a la esquina superior derecha","../imagenes/cart.jpeg");
-    
-        Toastify({
-            text: "Producto 10 Agregado",
-            duration: 3000,
-            position: 'right',
-            gravity: 'top'
-        }).showToast();
-    
-    })
-    
-} catch (error) {
-    
-}    
-    
-    
-    
-    
-
-    /*botones internos*/ 
-    
+      
+      };
+      
+      const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
+      addToShoppingCartButtons.forEach((addToCartButton) => {
+        addToCartButton.addEventListener('click', addToCartClicked);
+      });
+      
+      const comprarButton = document.querySelector('.comprarButton');
+      comprarButton.addEventListener('click', comprarButtonClicked);
+      
+      const shoppingCartItemsContainer = document.querySelector(
+        '.shoppingCartItemsContainer'
+      );
+      
+      function addToCartClicked(event) {
+        const button = event.target;
+        const item = button.closest('.item');
+      
+        const itemTitle = item.querySelector('.item-title').textContent;
+        const itemPrice = item.querySelector('.item-price').textContent;
+        const itemImage = item.querySelector('.item-image').src;
+      
+        mostrar_mensaje("Producto Agregado", "El total de de tu pedido se encuentra en la parte inferior","../imagenes/cart.jpeg");
+      
+        addItemToShoppingCart(itemTitle, itemPrice, itemImage);
+      }
+      
+      function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
+        const elementsTitle = shoppingCartItemsContainer.getElementsByClassName(
+          'shoppingCartItemTitle'
+        );
+        for (let i = 0; i < elementsTitle.length; i++) {
+          if (elementsTitle[i].innerText === itemTitle) {
+            console.log(elementsTitle[i].innerText);
+            console.log(itemTitle);
+            let elementQuantity = elementsTitle[
+              i
+            ].parentElement.parentElement.parentElement.querySelector(
+              '.shoppingCartItemQuantity'
+            );
+            elementQuantity.value++;
+            $('.toast').toast('show');
+            updateShoppingCartTotal();
+            return;
+          }
+        }
+      
+        const shoppingCartRow = document.createElement('div');
+        const shoppingCartContent = `
+        <div class="row shoppingCartItem">
+              <div class="col-6">
+                  <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                      <img src=${itemImage} class="img-fluid img-thumbnail shopping-cart-image" width="45px" height="45px">
+                      <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">${itemTitle}</h6>
+                  </div>
+              </div>
+              <div class="col-2">
+                  <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                      <p class="item-price mb-0 shoppingCartItemPrice">${itemPrice}</p>
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div
+                      class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
+                      <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number"
+                          value="1">
+                      <button class="btn btn-danger buttonDelete" type="button">X</button>
+                  </div>
+              </div>
+          </div>`;
+        shoppingCartRow.innerHTML = shoppingCartContent;
+        shoppingCartItemsContainer.append(shoppingCartRow);
+      
+        shoppingCartRow
+          .querySelector('.buttonDelete')
+          .addEventListener('click', removeShoppingCartItem);
+      
+        shoppingCartRow
+          .querySelector('.shoppingCartItemQuantity')
+          .addEventListener('change', quantityChanged);
+      
+        updateShoppingCartTotal();
+      }
+      
+      function updateShoppingCartTotal() {
+        let total = 0;
+        const shoppingCartTotal = document.querySelector('.shoppingCartTotal');
+      
+        const shoppingCartItems = document.querySelectorAll('.shoppingCartItem');
+      
+        shoppingCartItems.forEach((shoppingCartItem) => {
+          const shoppingCartItemPriceElement = shoppingCartItem.querySelector(
+            '.shoppingCartItemPrice'
+          );
+          const shoppingCartItemPrice = Number(
+            shoppingCartItemPriceElement.textContent.replace('Oferta: S/ ', '')
+          );
+          const shoppingCartItemQuantityElement = shoppingCartItem.querySelector(
+            '.shoppingCartItemQuantity'
+          );
+          const shoppingCartItemQuantity = Number(
+            shoppingCartItemQuantityElement.value
+          );
+          total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
+        });
+        shoppingCartTotal.innerHTML = ` S/ ${total.toFixed(2)}`;
+      }
+      
+      function removeShoppingCartItem(event) {
+        const buttonClicked = event.target;
+        buttonClicked.closest('.shoppingCartItem').remove();
+        updateShoppingCartTotal();
+      }
+      
+      function quantityChanged(event) {
+        const input = event.target;
+        input.value <= 0 ? (input.value = 1) : null;
+        updateShoppingCartTotal();
+      }
+      
+      function comprarButtonClicked() {
+        shoppingCartItemsContainer.innerHTML = '';
+        updateShoppingCartTotal();
+      }
+      
+    /* */
 }
 
 
-
+/* */
 

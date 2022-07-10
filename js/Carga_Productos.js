@@ -26,14 +26,14 @@ function createitemCard(item) {
   imagen.className = 'img-fluid img-thumbnail item-image';
 
   let producto = document.createElement('p');
-  producto.innerHTML = `<p>${item.Producto} </p>`;
+  producto.innerHTML = `<p>${item.Producto}</p>`;
   producto.className = "item-title";
   
   let precio = document.createElement('p');
-  precio.innerHTML = `<p>${item.Precio} </p>`;
+  precio.innerHTML = `<p>${item.Precio}</p>`;
   
   let oferta = document.createElement('p');
-  oferta.innerHTML = `<p>${item.Oferta} </p>`;
+  oferta.innerHTML = `<p>${item.Oferta}</p>`;
   oferta.className = "item-price";
   
   let boton = document.createElement('button'); 
